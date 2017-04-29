@@ -3,6 +3,7 @@
     <product-list></product-list>
     <Cart></Cart>
     <counter></counter>
+    <Count></Count>
   </div>
 
 </template>
@@ -11,6 +12,7 @@
   import Cart from '@/components/cart';
   import ProductList from '@/components/productList';
   import Counter from './counter.vue';
+  import Count from './count.vue';
   export default {
     name: 'hello',
     data () {
@@ -21,7 +23,8 @@
     components: {
       Cart,
       ProductList,
-      Counter
+      Counter,
+      Count
     }
   };
 </script>
