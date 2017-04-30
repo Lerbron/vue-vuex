@@ -18,6 +18,7 @@
   import Counter from './counter.vue';
   import Count from './count.vue';
   import InputItem from './shared/inputItem.vue';
+  // import { get, post } from './../utils/fetch';
   export default {
     name: 'hello',
     data () {
@@ -36,6 +37,15 @@
       change (msg) {
         this.msg = msg;
       }
+    },
+    created () {
+      // console.log('created....');
+//      get('https://mainsite-restapi.ele.me/v1/cities')
+//        .then(res => console.log(res, 'get方法'));
+//      post('https://mainsite-restapi.ele.me/v1/cities')
+//        .then(res => console.log(res, 'post方法'));
+//      this.$http.get('https://mainsite-restapi.ele.me/v1/cities')
+//        .then(res => { this.list = res.body.slice(0, 100); console.log(res); });   // 通过 vueResource 进行数据请求
     }
   };
 </script>
