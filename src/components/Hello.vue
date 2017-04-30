@@ -18,7 +18,7 @@
   import Counter from './counter.vue';
   import Count from './count.vue';
   import InputItem from './shared/inputItem.vue';
-  // import { get, post } from './../utils/fetch';
+  import { get } from './../utils/fetch';
   export default {
     name: 'hello',
     data () {
@@ -40,10 +40,10 @@
     },
     created () {
       // console.log('created....');
-//      get('https://mainsite-restapi.ele.me/v1/cities')
-//        .then(res => console.log(res, 'get方法'));
-//      post('https://mainsite-restapi.ele.me/v1/cities')
-//        .then(res => console.log(res, 'post方法'));
+      get('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=b8ba9627185a40ca9eac52bfa28e8a2d')
+        .then(res => console.log(res, 'get方法'))
+        .catch(msg => console.log(msg));
+
 //      this.$http.get('https://mainsite-restapi.ele.me/v1/cities')
 //        .then(res => { this.list = res.body.slice(0, 100); console.log(res); });   // 通过 vueResource 进行数据请求
     }
