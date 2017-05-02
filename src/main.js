@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import store from './vuex/index';
 import { currency } from './currency';
+import '@/assets/style.css';
 
 Vue.filter('currency', currency);
 
