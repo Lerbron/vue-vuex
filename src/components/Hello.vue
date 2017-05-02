@@ -27,8 +27,8 @@
     data () {
       return {
         msg: 'Welcome to Your Vue.js App',
-        showModal: false,
-        closeMethod: this.closeMethod
+        showModal: false
+        // closeMethod: this.closeMethod  //  父组件向子组件传递方法，方法一： 通过data进行监听、传递； 方法二： 直接将方法名绑定到父组件上
       };
     },
     components: {
